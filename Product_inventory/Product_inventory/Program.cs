@@ -14,6 +14,7 @@ Stock: {item1.stock}.
 ");
 
 // --------------------------------------------
+Console.WriteLine("\n----------------------------\n");
 // aplicando caracteristicas
 
 if (item1.IsAvailable())
@@ -31,6 +32,7 @@ Stock: {item1.stock}.
 ");
 
 // -----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
 
 Console.WriteLine("Product 2");
 
@@ -39,3 +41,13 @@ Book item2 = new Book("Salome", "Oscar Wilde");
 //item2.Author = "Oscar Wilde";
 
 item2.BookDescription();
+
+
+// ----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
+
+Console.WriteLine("Flight details:\n");
+
+Ticket flight1 = new Ticket("Matheus", "Dublin");
+
+flight1.FlightInfo();
