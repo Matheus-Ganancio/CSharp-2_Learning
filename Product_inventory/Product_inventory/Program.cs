@@ -46,8 +46,25 @@ item2.BookDescription();
 // ----------------------------------------------
 Console.WriteLine("\n----------------------------\n");
 
-Console.WriteLine("Flight details:\n");
+Console.WriteLine("Bank Account Details:\n");
 
-Ticket flight1 = new Ticket("Matheus", "Dublin");
+BankAccount AccountDetails1 = new BankAccount("12345-6", 999.99m, 1000.00m);
 
-flight1.FlightInfo();
+AccountDetails1.AccountInfo();
+
+// ----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
+
+Employee Employee = new Employee("Ronaldo peixoto", "Administrative Assistant");
+
+Console.WriteLine("Employee: " + Employee.Name);
+Console.WriteLine("Position: " + Employee.Position);
+
+// Tentativa inválida
+Employee.Promotion("Administrative Assistant");
+// Promoção válida
+Employee.Promotion("Project Analyst");
+
+Console.WriteLine("--- New Position ---");
+Console.WriteLine("Employee: " + Employee.Name);
+Console.WriteLine("Position: " + Employee.Position);
