@@ -46,7 +46,7 @@ item2.BookDescription();
 // ----------------------------------------------
 Console.WriteLine("\n----------------------------\n");
 
-Console.WriteLine("Bank Account Details:\n");
+Console.WriteLine("Bank Account Details: \n");
 
 BankAccount AccountDetails1 = new BankAccount("12345-6", 999.99m, 1000.00m);
 
@@ -54,6 +54,7 @@ AccountDetails1.AccountInfo();
 
 // ----------------------------------------------
 Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("Employee Details: \n");
 
 Employee Employee = new Employee("Ronaldo peixoto", "Administrative Assistant");
 
@@ -68,3 +69,42 @@ Employee.Promotion("Project Analyst");
 Console.WriteLine("--- New Position ---");
 Console.WriteLine("Employee: " + Employee.Name);
 Console.WriteLine("Position: " + Employee.Position);
+
+
+// ----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("Rectangle Details: \n");
+
+Rectangle RectangleArea1 = new Rectangle(6, 10);
+
+RectangleArea1.RectangleArea();
+
+// ----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("Movie Details: \n");
+
+Movie MovieInfo1 = new Movie("Dinossauro Luz", 18);
+MovieInfo1.ShowResult(20);
+
+Movie MovieInfo2 = new Movie("Gato Fogguete", 14);
+MovieInfo2.ShowResult(11);
+
+// ----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("Item Stock Details: \n");
+
+StationeryStore Item1 = new StationeryStore("Fork", 40);
+Item1.Take(5);
+Item1.ShowInventory();
+
+// ----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("Order Details: \n");
+
+Order Customer1 = new Order("01", "Lucia", "Delivered");
+Customer1.DisplayOrder();
+
+Order Customer2 = new Order("02", "James", "On the way");
+Customer2.DisplayOrder();
+Customer2.UpdateStatus("Delivered");
+Customer2.DisplayOrder();
