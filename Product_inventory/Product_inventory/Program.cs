@@ -1,4 +1,9 @@
-﻿Console.WriteLine("Product 1");
+﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("\nShop \n");
+
+Console.WriteLine("Product 1");
 
 Product item1 = new Product();
 item1.name = "Keyboard";
@@ -108,3 +113,19 @@ Order Customer2 = new Order("02", "James", "On the way");
 Customer2.DisplayOrder();
 Customer2.UpdateStatus("Delivered");
 Customer2.DisplayOrder();
+
+// ----------------------------------------------
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("Appointment with the doctor: \n");
+
+Appointment Patient1 = new Appointment("Julio", "Leticia", new DateTime(30, 4, 20));
+Patient1.ShowDetail();
+Patient1.Reschhedule(new DateTime(2026, 5, 07));
+Patient1.ShowDetail();
+
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("Software Info: \n");
+
+TechnicalInformation Detail1 = new TechnicalInformation(1500, "Windows/Mac");
+DigitalProduct Software = new DigitalProduct("Photoshop", 20, Detail1);
+Software.ShowDetail();
